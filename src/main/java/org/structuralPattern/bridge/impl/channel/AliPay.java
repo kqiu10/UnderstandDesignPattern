@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 import org.structuralPattern.bridge.impl.mode.IPayMode;
 
-public class AliPay extends Pay {
-    public AliPay(final IPayMode payMode) {
+public class AliAbstractPay extends AbstractPay {
+    public AliAbstractPay(final IPayMode payMode) {
         super(payMode);
     }
 
