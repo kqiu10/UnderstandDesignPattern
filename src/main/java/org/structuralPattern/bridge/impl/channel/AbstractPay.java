@@ -6,11 +6,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.structuralPattern.bridge.impl.mode.IPayMode;
 
-public abstract class Pay {
+public abstract class AbstractPay {
     protected static final Logger log = LogManager.getLogger();
     protected IPayMode payMode;
 
-    public Pay(final IPayMode payMode) {
+    public AbstractPay(final IPayMode payMode) {
         this.payMode = payMode;
     }
 

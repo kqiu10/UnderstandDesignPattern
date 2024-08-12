@@ -4,9 +4,9 @@ import java.math.BigDecimal;
 
 import org.structuralPattern.bridge.impl.mode.IPayMode;
 
-public class WechatAbstractPay extends AbstractPay {
+public class WechatPay extends AbstractPay {
 
-    public WechatAbstractPay(final IPayMode payMode) {
+    public WechatPay(final IPayMode payMode) {
         super(payMode);
     }
 
