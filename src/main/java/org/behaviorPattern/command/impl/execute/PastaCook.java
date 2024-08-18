@@ -1,4 +1,4 @@
-package org.behaviorPattern.commandPattern.impl.execute;
+package org.behaviorPattern.command.impl.execute;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

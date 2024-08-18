@@ -1,21 +1,22 @@
-package org.behaviorPattern.commandPattern.impl.request;
+package org.behaviorPattern.command.impl.request;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.behaviorPattern.commandPattern.impl.execute.ICook;
+import org.behaviorPattern.command.impl.execute.ICook;
 
-public class Pasta implements ICuisine {
+public class Steak implements ICuisine {
     private static final Logger log = LogManager.getLogger();
 
     private final ICook cook;
 
-    public Pasta(final ICook cook) {
+    public Steak(final ICook cook) {
         this.cook = cook;
     }
 
     @Override
     public void cook() {
-        log.info("Order pasta");
+        log.info("Order steak");
+
         cook.doCooking();
     }
 }
