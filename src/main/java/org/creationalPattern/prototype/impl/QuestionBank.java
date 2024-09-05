@@ -55,25 +55,25 @@ public class QuestionBank implements Cloneable {
 
     @Override
     public String toString() {
-        StringBuilder detail = new StringBuilder("考生：" + candidate + "\r\n" +
-                "考号：" + number + "\r\n" +
+        StringBuilder detail = new StringBuilder("Student：" + candidate + "\r\n" +
+                "seq：" + number + "\r\n" +
                 "--------------------------------------------\r\n" +
-                "一、选择题" + "\r\n\n");
+                "一、chose" + "\r\n\n");
 
         for (int idx = 0; idx < choiceQuestions.size(); idx++) {
-            detail.append("第").append(idx + 1).append("题：").append(choiceQuestions.get(idx).getName()).append("\r\n");
+            detail.append("The").append(idx + 1).append("question：").append(choiceQuestions.get(idx).getName()).append("\r\n");
             Map<String, String> option = choiceQuestions.get(idx).getOptions();
             for (String key : option.keySet()) {
                 detail.append(key).append("：").append(option.get(key)).append("\r\n");;
             }
-            detail.append("答案：").append(choiceQuestions.get(idx).getAnswer()).append("\r\n\n");
+            detail.append("answer：").append(choiceQuestions.get(idx).getAnswer()).append("\r\n\n");
         }
 
-        detail.append("二、问答题" + "\r\n\n");
+        detail.append("二、answer" + "\r\n\n");
 
         for (int idx = 0; idx < answerQuestions.size(); idx++) {
-            detail.append("第").append(idx + 1).append("题：").append(answerQuestions.get(idx).getName()).append("\r\n");
-            detail.append("答案：").append(answerQuestions.get(idx).getAnswer()).append("\r\n\n");
+            detail.append("The").append(idx + 1).append("question：").append(answerQuestions.get(idx).getName()).append("\r\n");
+            detail.append("answer：").append(answerQuestions.get(idx).getAnswer()).append("\r\n\n");
         }
 
         return detail.toString();

@@ -8,8 +8,8 @@ public class PrototypeTest {
     @Test
     public void test_QuestionBank() throws CloneNotSupportedException {
         QuestionBankGenerator questionBankController = new QuestionBankGenerator();
-        System.out.println(questionBankController.createPaper("花花", "1000001921032"));
-        System.out.println(questionBankController.createPaper("豆豆", "1000001921051"));
-        System.out.println(questionBankController.createPaper("大宝", "1000001921987"));
+        System.out.println(questionBankController.createPaper("Flower", "1000001921032"));
+        System.out.println(questionBankController.createPaper("Bean", "1000001921051"));
+        System.out.println(questionBankController.createPaper("Gold", "1000001921987"));
     }
 }
