@@ -1,4 +1,4 @@
-package org.creationalPattern.factory.impl.awards;
+package org.creationalPattern.factory.impl.services;
 
 public class CouponCommunityService implements ICommunity {
 

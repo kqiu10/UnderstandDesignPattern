@@ -2,10 +2,10 @@ package org.creationalPattern.factory.impl.factory;
 
 import java.util.Random;
 
-import org.creationalPattern.factory.impl.awards.CardCommunityService;
-import org.creationalPattern.factory.impl.awards.CouponCommunityService;
-import org.creationalPattern.factory.impl.awards.CashCommunityService;
-import org.creationalPattern.factory.impl.awards.ICommunity;
+import org.creationalPattern.factory.impl.services.CardCommunityService;
+import org.creationalPattern.factory.impl.services.CouponCommunityService;
+import org.creationalPattern.factory.impl.services.CashCommunityService;
+import org.creationalPattern.factory.impl.services.ICommunity;
 
 public class CommunityFactory {
 
